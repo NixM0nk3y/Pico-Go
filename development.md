@@ -18,3 +18,13 @@ Note: make sure you have the 'code' terminal command installed. See [code setup 
 - Install the vscode publishing tool by running `npm install -g vsce`
 - Create a .vsix package by running `vsce package` or running the `package` NPM script.
 - you can then install the .vsix package by running `code --install-extension Pico-Go-1.x.y.vsix`
+  ## Upgrading with newer VSCode and Electron versions
+ It is important that future support for Pico-Go is maintained with newer versions of Electron and VScode.
+
+- If Pico go stops working when you upgrade VSCode
+- Clone the Pico-Go repo or fork it.
+- Install Package Json Upgrade Extension from VSCode Marketplace
+- Upgrade necessary dependencies in `package.json` "@devDependencies"
+- Uninstall conflicting Pymakr extensions or similar
+- Install the extension
+- Test the extension and push.
